@@ -1,3 +1,5 @@
+using System.IO;
+
 class Program
 {
     static void Main(string[] args)
@@ -37,9 +39,18 @@ class Program
                     break;
                 case "3":
                     Console.WriteLine("save to file");
+
+                    string fileName = Console.ReadLine();
+                    journal.SaveToFile(fileName);
                     break;
                 case "4":
                     Console.WriteLine("load to file");
+                    
+                    Console.Write("Enter file name: ");
+                    fileName = Console.ReadLine();
+                    journal.LoadFromFile(fileName);
+                    Console.WriteLine("Entries loaded from file.");
+                    break;
                     break;
                 case "5":
                     Console.WriteLine("exiting ");
