@@ -46,3 +46,6 @@ class Journal
         Console.WriteLine("loaded from " + fileName);
     }
 }
+
+
+

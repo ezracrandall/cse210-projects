@@ -51,7 +51,7 @@ class Program
                     journal.LoadFromFile(fileName);
                     Console.WriteLine("Entries loaded from file.");
                     break;
-                    break;
+                    
                 case "5":
                     Console.WriteLine("exiting ");
                     break;
